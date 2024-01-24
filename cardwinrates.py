@@ -24,7 +24,7 @@ for run in runlist:
         else:
             all_cards[card]['losses'] += 1
 
-data = analysistools.reformat_dict_to_csvrmat(all_cards, 'card')
+data = analysistools.reformat_dict_to_csv(all_cards, 'card')
 analysistools.add_winrates(data)
 
 csv_file_path = sys.argv[1] if len(sys.argv) > 1 else 'output.csv'
