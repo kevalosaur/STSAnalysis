@@ -1,33 +1,46 @@
 @echo off
 
-if "%~2" == "" (
-    echo Usage: %0 character_name file_to_run [output_csv]
+if "%~1" == "-help" (
+    echo Usage: %0 characterName fileToRun [outputCSV]
+    echo Read README.md for more information.
+    exit /b 1
+)
+if "%~1" == "-h" (
+    echo Usage: %0 characterName fileToRun [outputCSV]
+    echo Read README.md for more information.
     exit /b 1
 )
 
-set character_name=%1
+if "%~2" == "" (
+    echo Usage: %0 characterName fileToRun [outputCSV]
+    exit /b 1
+)
+
+set characterName=%1
 
 if "%~2" == "cards" (
-    set file_to_run=cardwinrates.py
+    set fileToRun=cardwinrates.py
 )
-else if "%~2" == "floorsReached" (
-    set file_to_run=deathfloors.py
+if "%~2" == "floorsReached" (
+    set fileToRun=deathfloors.py
 )
-else if "%~2" == "toughEnemies" (
-    set file_to_run=toughenemies.py
+if "%~2" == "toughEnemies" (
+    set fileToRun=toughenemies.py
 )
-else if "%~2" == "relics" (
-    set file_to_run=relicwinrates.py
+if "%~2" == "relics" (
+    set fileToRun=relicwinrates.py
 )
-else (
-    echo Invalid argument
+
+if "%fileToRun%" == "" (
+    echo Invalid argument.
+    echo Usage: %0 characterName fileToRun [outputCSV]
     exit /b 1
 )
 
-set output_csv=%3
+set outputCSV=%3
 
-if "%output_csv%" == "" set output_csv=output.csv
+if "%outputCSV%" == "" set outputCSV=output.csv
 
-python formatrundata.py "WINDOWS" "%character_name%"
+python formatrundata.py "WINDOWS" "%characterName%"
 
-python "%file_to_run%" "%output_csv%"
+python "%fileToRun%" "%outputCSV%"

@@ -1,28 +1,28 @@
 #!/bin/bash
 
-# Check if the number of arguments is correct
 if [ "$#" -lt 2 ] || [ "$#" -gt 3 ]; then
-    echo "Usage: $0 character_name file_to_run [output_csv]"
+    echo "Usage: $0 characterName fileToRun [outputCSV]"
     exit 1
 fi
 
-character_name=$1
+characterName=$1
 
 if [ "$2" = "cards" ]; then
-    file_to_run = "cardwinrates.py"
+    fileToRun = "cardwinrates.py"
 elif [ "$2" = "floorsReached" ]; then
-    file_to_run = "deathfloors.py"
+    fileToRun = "deathfloors.py"
 elif [ "$2" = "relics" ]; then
-    file_to_run = "relicwinrates.py"
+    fileToRun = "relicwinrates.py"
 elif [ "$2" = "toughEnemies" ]; then
-    file_to_run = "toughenemies.py"
+    fileToRun = "toughenemies.py"
 else
-    echo Invalid argument
+    echo Invalid argument.
+    echo "Usage: $0 characterName fileToRun [outputCSV]"
     exit 1
 fi
 
-output_csv=${3:-output.csv}
+outputCSV=${3:-output.csv}
 
-python format_run_data.py "MAC" "$character_name"
+python formatrundata.py "MAC" "$characterName"
 
-python $file_to_run "$output_csv"
+python $fileToRun "$outputCSV"
