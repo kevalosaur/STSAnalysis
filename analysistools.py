@@ -6,6 +6,7 @@ import os
 
 PKL_PATH = 'runlist.pkl'
 NAME_UPDATE = json.load(open('updatednames.json'))
+BLESSINGS_VERBOSE = json.load(open('verboseblessings.json'))
 
 ACT3_WIN_FLR = 51
 ACT4_WIN_FLR = 56
@@ -32,6 +33,9 @@ def reformat_dict_to_csv(dct, label):
     return formatted_list
 
 def update_name(option, query):
+    if option == 'blessings':
+        if query in BLESSINGS_VERBOSE:
+            return BLESSINGS_VERBOSE[query]['description']
     if query in NAME_UPDATE[option]:
         return NAME_UPDATE[option][query]
     else:

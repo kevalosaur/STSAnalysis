@@ -1,0 +1,97 @@
+{
+    "BOSS_RELIC" : {
+        "description" : "Replace starting relic with random Boss relic",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    },
+    "HUNDRED_GOLD" : {
+        "description" : "Gain 100 gold",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    },
+    "ONE_RANDOM_RARE_CARD" : {
+        "description" : "Obtain a random rare card",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    },
+    "ONE_RARE_RELIC" : {
+        "description" : "Obtain a random rare relic",
+        "beat_exordium" : true,
+        "disadvantage" : true
+    },
+    "RANDOM_COLORLESS" : {
+        "description" : "Choose an uncommon colorless card to obtain",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    },
+    "RANDOM_COLORLESS_2" : {
+        "description" : "Choose a rare colorless card to obtain",
+        "beat_exordium" : true,
+        "disadvantage" : true
+    },
+    "RANDOM_COMMON_RELIC" : {
+        "description" : "Obtain a random common relic",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    },
+    "REMOVE_CARD" : {
+        "description" : "Remove a card",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    },
+    "REMOVE_TWO" : {
+        "description" : "Remove two cards",
+        "beat_exordium" : true,
+        "disadvantage" : true
+    },
+    "TEN_PERCENT_HP_BONUS" : {
+        "description" : "Max HP +10%",
+        "beat_exordium" : false,
+        "disadvantage" : false
+    },
+    "THREE_CARDS" : {
+        "description" : "Choose a card to obtain",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    },
+    "THREE_ENEMY_KILL" : {
+        "description" : "Next three enemies have 1 HP",
+        "beat_exordium" : false,
+        "disadvantage" : false
+    },
+    "THREE_RARE_CARDS" : {
+        "description" : "Choose a rare card to obtain",
+        "beat_exordium" : true,
+        "disadvantage" : true
+    },
+    "THREE_POTIONS" : {
+        "description" : "Obtain three random potions",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    },
+    "TRANSFORM_CARD" : {
+        "description" : "Transform a card",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    },
+    "TRANSFORM_TWO_CARDS" : {
+        "description" : "Transform two cards",
+        "beat_exordium" : true,
+        "disadvantage" : true
+    },
+    "TWENTY_PERCENT_HP_BONUS" : {
+        "description" : "Max HP +20%",
+        "beat_exordium" : true,
+        "disadvantage" : true
+    },
+    "TWO_FIFTY_GOLD" : {
+        "description" : "Gain 250 gold",
+        "beat_exordium" : true,
+        "disadvantage" : true
+    },
+    "UPGRADE_CARD" : {
+        "description" : "Upgrade a card",
+        "beat_exordium" : true,
+        "disadvantage" : false
+    }
+}

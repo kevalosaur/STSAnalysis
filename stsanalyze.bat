@@ -30,6 +30,9 @@ if "%~2" == "toughEnemies" (
 if "%~2" == "relics" (
     set fileToRun=relicwinrates.py
 )
+if "%~2" == "blessings" (
+    set fileToRun=neowwinrates.py
+)
 
 if "%fileToRun%" == "" (
     echo Invalid argument.
