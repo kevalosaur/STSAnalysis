@@ -19,6 +19,7 @@ for run in runlist:
         else:
             relics[relic]['losses'] += 1
 
+relics = analysistools.updated_names_dict('relics', relics)
 data = analysistools.reformat_dict_to_csv(relics, 'relic')
 analysistools.add_winrates(data)
 

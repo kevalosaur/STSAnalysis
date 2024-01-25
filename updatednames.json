@@ -1,0 +1,41 @@
+{
+    "relics" : {
+        "Boot" : "The Boot",
+        "Cables" : "Gold-Plated Cables",
+        "CaptainsWheel" : "Captain's Wheel",
+        "Frozen Egg 2" : "Frozen Egg",
+        "Molten Egg 2" : "Molten Egg",
+        "NeowsBlessing" : "Neow's Lament",
+        "Paper Crane" : "Paper Krane",
+        "Paper Frog" : "Paper Phrog",
+        "Toxic Egg 2" : "Toxic Egg",
+        "WingedGreaves" : "Wing Boots",
+        "Yang" : "Duality"
+    },
+    "cards" : {
+        "Adaptation" : "Rushdown",
+        "ClearTheMind" : "Tranquility",
+        "Conserve Battery" : "Charge Battery",
+        "Defend_B" : "Defend (Defect)",
+        "Defend_G" : "Defend (Silent)",
+        "Defend_P" : "Defend (Watcher)",
+        "Defend_R" : "Defend (Ironclad)",
+        "Fasting2" : "Fasting",
+        "Gash" : "Claw",
+        "Ghostly" : "Exhume",
+        "Lockon" : "Lock-On",
+        "Night Terror" : "Nightmare",
+        "PathToVictory" : "Pressure Points",
+        "Redo" : "Recursion",
+        "Steam" : "Steam Barrier",
+        "Steam Power" : "Overclock",
+        "Strike_B" : "Strike (Defect)",
+        "Strike_G" : "Strike (Silent)",
+        "Strike_P" : "Strike (Watcher)",
+        "Strike_R" : "Strike (Ironclad)",
+        "Underhanded Strike" : "Sneaky Strike",
+        "Undo" : "Equilibrium",
+        "Venomology" : "Alchemize",
+        "Wireheading" : "Foresight"
+    }
+}

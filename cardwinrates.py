@@ -24,6 +24,7 @@ for run in runlist:
         else:
             all_cards[card]['losses'] += 1
 
+all_cards = analysistools.updated_names_dict('cards', all_cards)
 data = analysistools.reformat_dict_to_csv(all_cards, 'card')
 analysistools.add_winrates(data)
 
