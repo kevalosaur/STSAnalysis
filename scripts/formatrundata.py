@@ -33,7 +33,6 @@ for chardir in os.listdir(root_dir):
     if chardir not in NAME_MAP['all'] and chardir != 'DAILY':
         NAME_MAP['modded'].append(chardir)
 NAME_MAP['allmodded'] = NAME_MAP['all'] + NAME_MAP['modded']
-print(NAME_MAP)
 
 if sys.argv[2].lower() in NAME_MAP:
     dirs = [root_dir + '\\' + name for name in NAME_MAP[sys.argv[2].lower()]]

@@ -2,8 +2,8 @@
 
 # Level at which a win is counted.
 # Allowed values:
-# "act3"
-# "act4"
+# "act3" - Beating the Act 3 boss (or, the second Act 3 boss for Ascension 20 runs.)
+# "act4" - Beating the Corrupt Heart.
 win_condition: "act3"
 
 # Filepath for your STS runs. If you have the Steam installation on PC/MAC, this should be left at default.
