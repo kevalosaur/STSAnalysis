@@ -64,7 +64,7 @@
         "beat_exordium" : true,
         "disadvantage" : true
     },
-    "THREE_POTIONS" : {
+    "THREE_RANDOM_POTIONS" : {
         "description" : "Obtain three random potions",
         "beat_exordium" : true,
         "disadvantage" : false

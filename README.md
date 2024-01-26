@@ -11,3 +11,5 @@ To use this tool, run `./STSAnalyze characterName analysisToRun [outputCSV]`.
 - `floorsReached`: Information on how often each floor has been reached.
 
 `outputCSV`: Name of the .csv file to which analysis should be outputted. Defaults to `output.csv`.
+
+Settings can be found and changed in `settings.yaml`.

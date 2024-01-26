@@ -9,7 +9,7 @@ relics = dict()
 
 for run in runlist:
     # For the purposes of this analysis, a win is defined as defeating the Act 3 boss
-    isWin = run['floor_reached'] >= analysistools.ACT3_WIN_FLR
+    isWin = run['floor_reached'] >= analysistools.get_win_flr(run['ascension_level'])
     for relic in run['relics']:
         if relic not in relics:
             relics[relic] = analysistools.new_winrate_obj()

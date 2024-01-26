@@ -13,7 +13,7 @@ all_cards = dict()
 
 for run in runlist:
     # For the purposes of this analysis, a win is defined as defeating the Act 3 boss
-    isWin = run['floor_reached'] >= analysistools.ACT3_WIN_FLR
+    isWin = run['floor_reached'] >= analysistools.get_win_flr(run['ascension_level'])
     card_set = clean_deck(run['master_deck'])
     for card in card_set:
         if card not in all_cards:

@@ -1,0 +1,7 @@
+# This is the settings file.
+
+# Level at which a win is counted.
+# Allowed values:
+# "act3"
+# "act4"
+win_condition: "act3"

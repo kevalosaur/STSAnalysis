@@ -1,15 +1,18 @@
 import csv
 import json
 import os
+import yaml
 
 # Common helper functions for STS Analysis
 
 PKL_PATH = 'runlist.pkl'
 NAME_UPDATE = json.load(open('updatednames.json'))
 BLESSINGS_VERBOSE = json.load(open('verboseblessings.json'))
+with open('settings.yaml', 'r') as file:
+    SETTINGS = yaml.safe_load(file)
 
-ACT3_WIN_FLR = 51
-ACT4_WIN_FLR = 56
+ACT_3_WIN_FLR = 51
+ACT_4_WIN_FLR = 56
 
 def add_winrates(data):
     for item in data:
@@ -17,6 +20,18 @@ def add_winrates(data):
 
 def clean():
     os.remove(PKL_PATH)
+
+def get_win_flr(asc):
+    if asc == 20:
+        if [SETTINGS['win_condition']] == 'act3':
+            return ACT_3_WIN_FLR + 1
+        else:
+            return ACT_4_WIN_FLR + 1
+    else:
+        if [SETTINGS['win_condition']] == 'act3':
+            return ACT_3_WIN_FLR
+        else:
+            return ACT_4_WIN_FLR
 
 def new_winrate_obj():
     return {
