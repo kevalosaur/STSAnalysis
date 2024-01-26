@@ -5,3 +5,9 @@
 # "act3"
 # "act4"
 win_condition: "act3"
+
+# Filepath for your STS runs. If you have the Steam installation on PC/MAC, this should be left at default.
+# Allowed values:
+# "DEFAULT"
+# <file_path>
+runs_file_path: "DEFAULT"
