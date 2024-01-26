@@ -19,19 +19,19 @@ if "%~2" == "" (
 set characterName=%1
 
 if "%~2" == "cards" (
-    set fileToRun=cardwinrates.py
+    set fileToRun=scripts/cardwinrates.py
 )
 if "%~2" == "floorsReached" (
-    set fileToRun=deathfloors.py
+    set fileToRun=scripts/deathfloors.py
 )
 if "%~2" == "toughEnemies" (
-    set fileToRun=toughenemies.py
+    set fileToRun=scripts/toughenemies.py
 )
 if "%~2" == "relics" (
-    set fileToRun=relicwinrates.py
+    set fileToRun=scripts/relicwinrates.py
 )
 if "%~2" == "blessings" (
-    set fileToRun=neowwinrates.py
+    set fileToRun=scripts/neowwinrates.py
 )
 
 if "%fileToRun%" == "" (
@@ -44,6 +44,6 @@ set outputCSV=%3
 
 if "%outputCSV%" == "" set outputCSV=output.csv
 
-python formatrundata.py "WINDOWS" "%characterName%"
+python scripts/formatrundata.py "WINDOWS" "%characterName%"
 
 python "%fileToRun%" "%outputCSV%"

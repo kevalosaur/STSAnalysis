@@ -8,15 +8,15 @@ fi
 characterName=$1
 
 if [ "$2" = "cards" ]; then
-    fileToRun = "cardwinrates.py"
+    fileToRun = "scripts/cardwinrates.py"
 elif [ "$2" = "floorsReached" ]; then
-    fileToRun = "deathfloors.py"
+    fileToRun = "scripts/deathfloors.py"
 elif [ "$2" = "relics" ]; then
-    fileToRun = "relicwinrates.py"
+    fileToRun = "scripts/relicwinrates.py"
 elif [ "$2" = "toughEnemies" ]; then
-    fileToRun = "toughenemies.py"
+    fileToRun = "scripts/toughenemies.py"
 elif [ "$2" = "blessings" ]; then
-    fileToRun = "neowwinrates.py"
+    fileToRun = "scripts/neowwinrates.py"
 else
     echo Invalid argument.
     echo "Usage: $0 characterName fileToRun [outputCSV]"
@@ -25,6 +25,6 @@ fi
 
 outputCSV=${3:-output.csv}
 
-python formatrundata.py "MAC" "$characterName"
+python scripts/formatrundata.py "MAC" "$characterName"
 
 python $fileToRun "$outputCSV"

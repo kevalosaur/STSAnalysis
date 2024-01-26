@@ -6,8 +6,8 @@ import yaml
 # Common helper functions for STS Analysis
 
 PKL_PATH = 'runlist.pkl'
-NAME_UPDATE = json.load(open('updatednames.json'))
-BLESSINGS_VERBOSE = json.load(open('verboseblessings.json'))
+NAME_UPDATE = json.load(open('resources\\updatednames.json'))
+BLESSINGS_VERBOSE = json.load(open('resources\\verboseblessings.json'))
 with open('settings.yaml', 'r') as file:
     SETTINGS = yaml.safe_load(file)
 
