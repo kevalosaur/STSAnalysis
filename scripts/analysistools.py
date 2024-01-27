@@ -67,3 +67,8 @@ def write_to_csv(data, filepath):
         csv_writer = csv.DictWriter(csvfile, fieldnames=data[0].keys())
         csv_writer.writeheader()
         csv_writer.writerows(data)
+
+def write_floormat_to_csv(data, filepath):
+    with open(filepath, 'w', newline='') as csvfile:
+        csv_writer = csv.writer(csvfile)
+        csv_writer.writerows(data)

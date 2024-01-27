@@ -17,6 +17,8 @@ elif [ "$2" = "toughEnemies" ]; then
     fileToRun = "scripts/toughenemies.py"
 elif [ "$2" = "blessings" ]; then
     fileToRun = "scripts/neowwinrates.py"
+elif [ "$2" = "gold" ]; then
+    fileToRun = "scripts/goldperfloor.py"
 else
     echo Invalid argument.
     echo "Usage: $0 characterName fileToRun [outputCSV]"

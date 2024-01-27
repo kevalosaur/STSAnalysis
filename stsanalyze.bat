@@ -33,6 +33,9 @@ if "%~2" == "relics" (
 if "%~2" == "blessings" (
     set fileToRun=scripts/neowwinrates.py
 )
+if "%~2" == "gold" (
+    set fileToRun=scripts/goldperfloor.py
+)
 
 if "%fileToRun%" == "" (
     echo Invalid argument.
