@@ -15,6 +15,7 @@ To use this tool, run `./STSAnalyze characterName analysisToRun [outputCSV]`.
 - `toughEnemies`: Information on deadliest enemies.
 - `floorsReached`: Information on how often each floor has been reached.
 - `gold`: Raw data on gold amassed by floor.
+- `hp`: Raw data on current HP by floor.
 
 `outputCSV`: Name of the .csv file to which analysis should be outputted. Defaults to `output.csv`.
 

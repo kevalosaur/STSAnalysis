@@ -8,7 +8,7 @@ analysistools.clean()
 
 floors = [[] for _ in range(57)]
 for run in runlist:
-    for floor, gold in enumerate(run['gold_per_floor']):
+    for floor, gold in enumerate(run['current_hp_per_floor']):
         floors[floor].append(gold)
 
 csv_file_path = sys.argv[1] if len(sys.argv) > 1 else 'output.csv'
